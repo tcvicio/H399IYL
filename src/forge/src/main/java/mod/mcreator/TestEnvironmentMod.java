@@ -147,6 +147,7 @@ mcreator_wreckedShipBow mcreator_40 = new mcreator_wreckedShipBow();
 mcreator_genSeaWeedsdeepOcean mcreator_41 = new mcreator_genSeaWeedsdeepOcean();
 mcreator_alienChip mcreator_42 = new mcreator_alienChip();
 mcreator_autoSeederGUI mcreator_43 = new mcreator_autoSeederGUI();
+mcreator_commandBlockRecipe mcreator_44 = new mcreator_commandBlockRecipe();
 
 
 @Override
@@ -195,6 +196,7 @@ if(mcreator_40.addFuel(fuel)!=0) return mcreator_40.addFuel(fuel);
 if(mcreator_41.addFuel(fuel)!=0) return mcreator_41.addFuel(fuel);
 if(mcreator_42.addFuel(fuel)!=0) return mcreator_42.addFuel(fuel);
 if(mcreator_43.addFuel(fuel)!=0) return mcreator_43.addFuel(fuel);
+if(mcreator_44.addFuel(fuel)!=0) return mcreator_44.addFuel(fuel);
 return 0;
 }
 
@@ -291,6 +293,8 @@ if(world.provider.getDimensionId()==-1)mcreator_42.generateNether(world, random,
 if(world.provider.getDimensionId()==0)mcreator_42.generateSurface(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==-1)mcreator_43.generateNether(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==0)mcreator_43.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_44.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_44.generateSurface(world, random, chunkX, chunkZ);
 
 
 }
@@ -348,6 +352,7 @@ mcreator_40.load(event);
 mcreator_41.load(event);
 mcreator_42.load(event);
 mcreator_43.load(event);
+mcreator_44.load(event);
 
 
 }
@@ -397,6 +402,7 @@ mcreator_40.serverLoad(event);
 mcreator_41.serverLoad(event);
 mcreator_42.serverLoad(event);
 mcreator_43.serverLoad(event);
+mcreator_44.serverLoad(event);
 }
 @EventHandler
 public void preInit(FMLPreInitializationEvent event){
@@ -444,6 +450,7 @@ mcreator_40.instance = this.instance;
 mcreator_41.instance = this.instance;
 mcreator_42.instance = this.instance;
 mcreator_43.instance = this.instance;
+mcreator_44.instance = this.instance;
 mcreator_0.preInit(event);
 mcreator_1.preInit(event);
 mcreator_2.preInit(event);
@@ -488,6 +495,7 @@ mcreator_40.preInit(event);
 mcreator_41.preInit(event);
 mcreator_42.preInit(event);
 mcreator_43.preInit(event);
+mcreator_44.preInit(event);
 proxy.registerRenderers(this);
 }
 public static class GuiHandler implements IGuiHandler {
