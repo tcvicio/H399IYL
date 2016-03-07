@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods>
+
+
+<mod>
+
+	<name>
+		HacheLand
+	</name>
+
+	<type>
+		Biome
+	</type>
+
+	<description>
+		Biome is specific area with defined shape, color, weather and fauna.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BeachPalm
+	</name>
+
+	<type>
+		Structure
+	</type>
+
+	<description>
+		Structure is set of blocks that spawns in overworld or nether randomly.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		SeaWeedItem
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		YellowRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		TabDefqon1
+	</name>
+
+	<type>
+		Tab
+	</type>
+
+	<description>
+		Tab is set of items and blocks that can be seen in creative inventory.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WreckedShipBack
+	</name>
+
+	<type>
+		Structure
+	</type>
+
+	<description>
+		Structure is set of blocks that spawns in overworld or nether randomly.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		VirginRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		DefqonOneSpeaker
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlueRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		RedRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		GenSeaWeeds
+	</name>
+
+	<type>
+		Structure
+	</type>
+
+	<description>
+		Structure is set of blocks that spawns in overworld or nether randomly.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WeedPlant
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		MagentaRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BlackRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		GoldRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WhiteRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BrownRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessRedRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		UvRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		PurpleRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		SilverRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessBlackRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessWhiteRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessUVRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessGoldRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessYellowRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessMagentaRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessBrownRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessPurpleRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessSilverRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessBlueRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		IndigoRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ShapelessIndigoRecord
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WreckedShipStory
+	</name>
+
+	<type>
+		BasicGUI
+	</type>
+
+	<description>
+		GUI which displays on event and shows button, slots and players inventory if selected.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WreckedShipDiary
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienOre
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienIngot
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheOre
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheGem
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheTab
+	</name>
+
+	<type>
+		Tab
+	</type>
+
+	<description>
+		Tab is set of items and blocks that can be seen in creative inventory.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		WreckedShipBow
+	</name>
+
+	<type>
+		Structure
+	</type>
+
+	<description>
+		Structure is set of blocks that spawns in overworld or nether randomly.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		GenSeaWeedsdeepOcean
+	</name>
+
+	<type>
+		Structure
+	</type>
+
+	<description>
+		Structure is set of blocks that spawns in overworld or nether randomly.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienChip
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AutoSeederGUI
+	</name>
+
+	<type>
+		BasicGUI
+	</type>
+
+	<description>
+		GUI which displays on event and shows button, slots and players inventory if selected.
+	</description>
+
+</mod>
+
+
+</mods>

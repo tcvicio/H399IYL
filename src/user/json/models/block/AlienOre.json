@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/AlienOre","down": "blocks/AlienOre","north": "blocks/AlienOre","east": "blocks/AlienOre","south": "blocks/AlienOre","west": "blocks/AlienOre","particle": "blocks/AlienOre"
+    }
+}

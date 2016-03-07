@@ -1,0 +1,14 @@
+{
+"htnniyl.speaker.yellow": {"category": "record","sounds": [{"name": "Yellow","stream": true}]},
+"htnniyl.speaker.blue": {"category": "record","sounds": [{"name": "Blue","stream": true}]},
+"htnniyl.speaker.red": {"category": "record","sounds": [{"name": "Red","stream": true}]},
+"htnniyl.speaker.magenta": {"category": "record","sounds": [{"name": "Magenta","stream": true}]},
+"htnniyl.speaker.black": {"category": "record","sounds": [{"name": "Black","stream": true}]},
+"htnniyl.speaker.gold": {"category": "record","sounds": [{"name": "Gold","stream": true}]},
+"htnniyl.speaker.white": {"category": "record","sounds": [{"name": "White","stream": true}]},
+"htnniyl.speaker.brown": {"category": "record","sounds": [{"name": "Brown","stream": true}]},
+"htnniyl.speaker.indigo": {"category": "record","sounds": [{"name": "Indigo","stream": true}]},
+"htnniyl.speaker.uv": {"category": "record","sounds": [{"name": "UV","stream": true}]},
+"htnniyl.speaker.purple": {"category": "record","sounds": [{"name": "Purple","stream": true}]},
+"htnniyl.speaker.silver": {"category": "record","sounds": [{"name": "Silver","stream": true}]}
+}

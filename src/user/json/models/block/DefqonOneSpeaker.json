@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/DefqonSpeaker","down": "blocks/DefqonSpeaker","north": "blocks/DefqonSpeaker","east": "blocks/SpeakerFront","south": "blocks/DefqonSpeaker","west": "blocks/DefqonSpeaker","particle": "blocks/DefqonSpeaker"
+    }
+}

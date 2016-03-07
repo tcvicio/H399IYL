@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/SpeakerSide","down": "blocks/SpeakerSide","north": "blocks/SpeakerSide","east": "blocks/SpeakerFront","south": "blocks/SpeakerSide","west": "blocks/SpeakerSide","particle": "blocks/SpeakerSide"
+    }
+}

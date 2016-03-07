@@ -1,0 +1,6 @@
+{
+    "parent": "TestEnvironmentMod:block/GenericModelBlock_custom",
+    "textures": {
+        "particle": "blocks/SpeakerYellowFront","all": "blocks/SpeakerYellowFront"
+    }
+}

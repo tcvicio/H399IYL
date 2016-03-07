@@ -1,0 +1,19 @@
+[
+{
+  "modid": "defqonharddiscs",
+  "name": "defqonharddiscs",
+  "description": "Be a Hard Dance DJ with this mod!",
+  "version": "1.2",
+  "credits": "Created by mod maker MCreator and hacheipe399",
+  "logoFile": "/logo.png",
+  "mcversion": "1.8.9",
+  "url": "https://mcreator.pylo.co/",
+  "updateUrl": "",
+  "authors": [ "hacheipe399" , "MCreator" ],
+  "parent": "",
+  "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
+}
+]

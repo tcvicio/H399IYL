@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "blocks/seaWeeds",
+		"particle": "blocks/seaWeeds"
+    }
+}
