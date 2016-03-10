@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -111,11 +111,11 @@ int chunkX = i >> 4;
 int chunkZ = k >> 4;
 int height = world.getChunkFromChunkCoords(chunkX, chunkZ).getHeight(new BlockPos(i & 15, 0, k & 15));
 
-int j = height-33;
+int j = height-1;
 if(world.getBiomeGenForCoords(new BlockPos(i, j, k)).biomeName.equals(BiomeGenBase.deepOcean.biomeName)) {
 
 
-if((random.nextInt(1000000)+1)<=100000){
+if((random.nextInt(1000000)+1)<=1000000){
 boolean place = true;
 
 if(place){
@@ -193,26 +193,7 @@ world.setBlockState(new BlockPos(i+0, j+1, k+2), Block.getBlockById(13).getState
 world.setBlockState(new BlockPos(i+1, j+1, k+2), Block.getBlockById(5).getStateFromMeta(1), 3);
 world.setBlockState(new BlockPos(i+2, j+1, k+2), Block.getBlockById(9).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+3, j+1, k+2), Block.getBlockById(89).getStateFromMeta(0), 3);
-
-//CHEST SETUP
 world.setBlockState(new BlockPos(i+4, j+1, k+2), Block.getBlockById(54).getStateFromMeta(3), 3);
-TileEntity chest = world.getTileEntity(new BlockPos(i+4, j+1, k+2));
-for (int slot = 0; slot < ((TileEntityChest) chest).getSizeInventory(); slot++) {
-	int probability = random.nextInt(70);
-	int quantity = random.nextInt(3) + 1;
-	if (probability == 35 || probability == 69) {
-		((TileEntityChest) chest).setInventorySlotContents(slot, new ItemStack(mcreator_goldRecord.block));
-	}
-	else if (probability == 15 || probability == 30) {
-		((TileEntityChest) chest).setInventorySlotContents(slot, new ItemStack(mcreator_brownRecord.block));
-	}
-	else if (probability < 5) {
-		((TileEntityChest) chest).setInventorySlotContents(slot, new ItemStack(Items.rotten_flesh, quantity));
-	}
-	else if (probability > 67) {
-		((TileEntityChest) chest).setInventorySlotContents(slot, new ItemStack(mcreator_wreckedShipDiary.block));
-	}
-}
 world.setBlockState(new BlockPos(i+5, j+1, k+2), Block.getBlockById(5).getStateFromMeta(1), 3);
 world.setBlockState(new BlockPos(i+6, j+1, k+2), Block.getBlockById(13).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+0, j+1, k+3), Block.getBlockById(9).getStateFromMeta(0), 3);

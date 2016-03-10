@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -139,7 +139,7 @@ boolean red = false;
 
 protected BlockWeedPlant()
 {
-        super(Material.grass);
+        super(Material.ground);
 
 GameRegistry.registerBlock(this, "WeedPlant");
 

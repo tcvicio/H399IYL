@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -111,7 +111,7 @@ int chunkX = i >> 4;
 int chunkZ = k >> 4;
 int height = world.getChunkFromChunkCoords(chunkX, chunkZ).getHeight(new BlockPos(i & 15, 0, k & 15));
 
-int j = height-2;
+int j = height-1;
 if(world.getBiomeGenForCoords(new BlockPos(i, j, k)).biomeName.equals(BiomeGenBase.river.biomeName)) {
 
 
@@ -119,7 +119,9 @@ if((random.nextInt(1000000)+1)<=100000){
 boolean place = true;
 
 if(place){
-world.setBlockState(new BlockPos(i+0, j+0, k+0), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+0, j+0, k+0), Block.getBlockById(199).getStateFromMeta(0), 3);
+world.setBlockState(new BlockPos(i+0, j+1, k+0), Block.getBlockById(199).getStateFromMeta(0), 3);
+world.setBlockState(new BlockPos(i+0, j+2, k+0), Block.getBlockById(199).getStateFromMeta(0), 3);
 }
 }
 }

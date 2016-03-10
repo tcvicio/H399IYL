@@ -10,5 +10,6 @@
 "htnniyl.speaker.indigo": {"category": "record","sounds": [{"name": "Indigo","stream": true}]},
 "htnniyl.speaker.uv": {"category": "record","sounds": [{"name": "UV","stream": true}]},
 "htnniyl.speaker.purple": {"category": "record","sounds": [{"name": "Purple","stream": true}]},
-"htnniyl.speaker.silver": {"category": "record","sounds": [{"name": "Silver","stream": true}]}
+"htnniyl.speaker.silver": {"category": "record","sounds": [{"name": "Silver","stream": true}]},
+"htnniyl.speaker.secret": {"category": "record","sounds": [{"name": "Secret","stream": true}]}
 }

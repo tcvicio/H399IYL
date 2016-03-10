@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -128,7 +128,7 @@ block.setHarvestLevel("pickaxe", 1);
 public void generateSurface(World world, java.util.Random rand, int chunkX, int chunkZ){
 for(int i = 0; i < 12; i++){
 int randPosX = chunkX + rand.nextInt(16);
-int randPosY = rand.nextInt(68)+20;
+int randPosY = rand.nextInt(108)+20;
 int randPosZ = chunkZ + rand.nextInt(16);
 (new WorldGenMinable(mcreator_alienOre.block.getDefaultState(), 16)).generate(world, rand, new BlockPos(randPosX, randPosY, randPosZ));
 }

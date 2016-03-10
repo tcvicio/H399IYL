@@ -1,5 +1,5 @@
 #Lang file was made using MCreator
-#Mon Feb 29 18:48:19 ART 2016
+#Wed Mar 09 20:27:43 ART 2016
 item.GoldRecord.name=Gold Defqon.1 Record
 item.IndigoRecord.name=Indigo Defqon.1 Record
 itemGroup.tabhacheTab=H399IYL stuff
@@ -19,13 +19,14 @@ item.RedRecord.name=Red Defqon.1 Record
 item.YellowRecord.name=Yellow Defqon.1 Record
 item.BlueRecord.name=Blue Defqon.1 Disk
 tile.HacheOre.name=Hache Ore
-item.SeaWeedItem.name=Sea Weed
-tile.SpeakerYellow.name=Defqon.1 Speaker
-tile.DefqonOneSpeaker.name=Defqon.1 Speaker
 item.UvRecord.name=UV Defqon.1 Record
+tile.DefqonOneSpeaker.name=Defqon.1 Speaker
+tile.SpeakerYellow.name=Defqon.1 Speaker
+item.SeaWeedItem.name=Sea Weed
 itemGroup.tabtabDefqon1=H399IYL Defqon.1 stuff
 item.WreckedShipDiary.name=Ship's diary
 tile.AlienOre.name=Alien Ore
 item.BlackRecord.name=Black Defqon.1 Record
+item.SecretRecord.name=Secret Defqon.1 Record
 tile.Generic.name=TEST BLOCK
 item.AlienIngot.name=Alien Ingot

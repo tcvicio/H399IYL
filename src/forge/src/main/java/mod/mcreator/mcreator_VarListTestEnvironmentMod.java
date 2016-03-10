@@ -1,5 +1,1 @@
-package mod.mcreator;public class mcreator_VarListTestEnvironmentMod{
-
-	
-
-}
+public class mcreator_VarList%MAINMODNAME%

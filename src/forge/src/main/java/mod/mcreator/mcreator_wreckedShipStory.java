@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -266,13 +266,13 @@ if (par2 != 28 && par2 != 156){
 protected void drawGuiContainerForegroundLayer(int par1, int par2){
 	int posX = (this.width) /2;
 	int posY = (this.height) /2;
-	this.fontRendererObj.drawString("§oFebruary the 24th, 1416", (24), (4), 0x000066);
-this.fontRendererObj.drawString("§oWe saw under the deep ocean a", (4), (20), 0x333333);
-this.fontRendererObj.drawString("§ostrange temple, which is huge.", (3), (38), 0x333333);
-this.fontRendererObj.drawString("§oWe will investigate. But before we", (2), (57), 0x333333);
-this.fontRendererObj.drawString("§owill store our treasure in the", (3), (77), 0x333333);
-this.fontRendererObj.drawString("§obow of the ship.", (3), (94), 0x333333);
-this.fontRendererObj.drawString("§o-Hero Brine, stern writer", (3), (142), 0x006600);
+	this.fontRendererObj.drawString("February the 24th, 1416", (24), (4), 0x000066);
+this.fontRendererObj.drawString("We saw under the deep ocean a", (4), (20), 0x333333);
+this.fontRendererObj.drawString("strange temple, which is huge.", (3), (38), 0x333333);
+this.fontRendererObj.drawString("We will investigate. But before we", (2), (57), 0x333333);
+this.fontRendererObj.drawString("will store our treasure in the", (3), (77), 0x333333);
+this.fontRendererObj.drawString("bow of the ship.", (3), (94), 0x333333);
+this.fontRendererObj.drawString("-Hero Brine, stern writer", (3), (142), 0x006600);
 
 }
 

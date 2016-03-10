@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -375,9 +375,13 @@ world.setBlockState(new BlockPos(i+5, j+8, k+5), Block.getBlockById(17).getState
 world.setBlockState(new BlockPos(i+10, j+8, k+5), Block.getBlockById(18).getStateFromMeta(15), 3);
 world.setBlockState(new BlockPos(i+5, j+8, k+10), Block.getBlockById(18).getStateFromMeta(15), 3);
 world.setBlockState(new BlockPos(i+5, j+9, k+1), Block.getBlockById(18).getStateFromMeta(15), 3);
+world.setBlockState(new BlockPos(i+5, j+9, k+4), Block.getBlockById(41).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+1, j+9, k+5), Block.getBlockById(18).getStateFromMeta(15), 3);
+world.setBlockState(new BlockPos(i+4, j+9, k+5), Block.getBlockById(41).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+5, j+9, k+5), Block.getBlockById(17).getStateFromMeta(3), 3);
+world.setBlockState(new BlockPos(i+6, j+9, k+5), Block.getBlockById(41).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+9, j+9, k+5), Block.getBlockById(18).getStateFromMeta(15), 3);
+world.setBlockState(new BlockPos(i+5, j+9, k+6), Block.getBlockById(41).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+5, j+9, k+9), Block.getBlockById(18).getStateFromMeta(15), 3);
 world.setBlockState(new BlockPos(i+5, j+10, k+2), Block.getBlockById(18).getStateFromMeta(15), 3);
 world.setBlockState(new BlockPos(i+5, j+10, k+3), Block.getBlockById(18).getStateFromMeta(15), 3);

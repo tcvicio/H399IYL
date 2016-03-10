@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -110,7 +110,7 @@ if(event.getSide() == Side.CLIENT){
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("TestEnvironmentMod:DefqonOneSpeaker", "inventory"));}
 
 GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
-	"012", "345", "678", Character.valueOf('0'), new ItemStack(Blocks.planks, 1), Character.valueOf('1'), new ItemStack(Blocks.planks, 1), Character.valueOf('2'), new ItemStack(Blocks.planks, 1), Character.valueOf('3'), new ItemStack(Blocks.planks, 1), Character.valueOf('4'), new ItemStack(Blocks.pumpkin, 1), Character.valueOf('5'), new ItemStack(Blocks.planks, 1), Character.valueOf('6'), new ItemStack(Blocks.planks, 1), Character.valueOf('7'), new ItemStack(Blocks.planks, 1), Character.valueOf('8'), new ItemStack(Blocks.planks, 1), 
+	"012", "345", "678", Character.valueOf('0'), new ItemStack(Blocks.planks, 1), Character.valueOf('1'), new ItemStack(Blocks.planks, 1), Character.valueOf('2'), new ItemStack(Blocks.planks, 1), Character.valueOf('3'), new ItemStack(Blocks.planks, 1), Character.valueOf('4'), new ItemStack(mcreator_alienChip.block, 1), Character.valueOf('5'), new ItemStack(Blocks.planks, 1), Character.valueOf('6'), new ItemStack(Blocks.planks, 1), Character.valueOf('7'), new ItemStack(Blocks.planks, 1), Character.valueOf('8'), new ItemStack(Blocks.planks, 1), 
 });
 }
 
@@ -224,6 +224,10 @@ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "Tes
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_silverRecord.block){
 world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.silver", 1.0F, 1.0F);
+}
+
+if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_secretRecord.block){
+world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.secret", 1.0F, 1.0F);
 }
 
 return true;}

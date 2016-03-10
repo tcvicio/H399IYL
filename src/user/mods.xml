@@ -750,4 +750,38 @@
 </mod>
 
 
+<mod>
+
+	<name>
+		CommandBlockRecipe
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		SecretRecord
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
 </mods>

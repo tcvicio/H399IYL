@@ -1,4 +1,4 @@
-package mod.mcreator;import net.minecraft.block.*;
+
 import net.minecraft.block.material.*;
 import net.minecraft.client.*;
 import net.minecraft.client.audio.*;
