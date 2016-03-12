@@ -130,6 +130,20 @@ import net.minecraftforge.fml.common.eventhandler.*;
 
 public class mcreator_GlobalEventsTestEnvironmentMod{
 
-	
+	@SubscribeEvent
+public void onPlayerInBed(PlayerSleepInBedEvent event){
+EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
+int i = event.pos.getX();
+int j = event.pos.getY();
+int k = event.pos.getZ();
+MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
+World world = server.worldServers[0];
+
+if(true){
+if (entity.ridingEntity == null && entity.riddenByEntity == null && !world.isRemote){entity.travelToDimension(3);}
+}
+}
+
+
 
 }

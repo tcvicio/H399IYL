@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=z": { "model": "TestEnvironmentMod:nightmareDimension_portal_ew" },
+        "axis=x": { "model": "TestEnvironmentMod:nightmareDimension_portal_ns" },
+		"inventory": { "model": "TestEnvironmentMod:nightmareDimension_portal_ns" }
+    }
+}

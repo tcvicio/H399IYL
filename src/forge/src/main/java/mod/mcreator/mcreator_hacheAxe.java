@@ -57,7 +57,6 @@ import net.minecraft.server.dedicated.*;
 import net.minecraft.server.gui.*;
 import net.minecraft.server.integrated.*;
 import net.minecraft.server.management.*;
-
 import net.minecraft.stats.*;
 import net.minecraft.tileentity.*;
 import net.minecraft.util.*;
@@ -86,71 +85,39 @@ import net.minecraftforge.event.entity.player.*;
 import net.minecraftforge.event.terraingen.*;
 import net.minecraftforge.event.world.*;
 import net.minecraftforge.oredict.*;
-
 import net.minecraft.init.*;
-import java.util.Random;
+import java.util.*;
 
-public class mcreator_hacheLand {
+import net.minecraftforge.common.util.*;import net.minecraft.client.resources.model.*;
+public class mcreator_hacheAxe{
 
-public static BiomeGenhacheLand biome = new BiomeGenhacheLand();
+public mcreator_hacheAxe(){}
 
-public Object instance;
+public static Item block;
+public static Object instance;public void load(FMLInitializationEvent event){
+ItemStack stack = new ItemStack(block, 1);if(event.getSide() == Side.CLIENT)
+Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("TestEnvironmentMod:HacheAxe", "inventory"));
 
-public mcreator_hacheLand(){}
-
-public void load(FMLInitializationEvent event){
-BiomeDictionary.registerBiomeType(biome, BiomeDictionary.Type.FOREST);
-BiomeManager.addSpawnBiome(biome);
-BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 5));
-}
-
+GameRegistry.addRecipe(stack, new Object[]{
+	"01X", "34X", "X7X", Character.valueOf('0'), new ItemStack(mcreator_hacheGem.block, 1), Character.valueOf('1'), new ItemStack(mcreator_hacheGem.block, 1), Character.valueOf('3'), new ItemStack(mcreator_hacheGem.block, 1), Character.valueOf('4'), new ItemStack(Items.stick, 1), Character.valueOf('7'), new ItemStack(Items.stick, 1), 
+});}
 public void generateNether(World world, Random random, int chunkX, int chunkZ){}
 public void generateSurface(World world, Random random, int chunkX, int chunkZ){}
-public void registerRenderers(){}
-public int addFuel(ItemStack fuel){
-	return 0;
-}
+public int addFuel(ItemStack fuel){return 0;}
 public void serverLoad(FMLServerStartingEvent event){}
 public void preInit(FMLPreInitializationEvent event){}
+public void registerRenderers(){}
 
-static class BiomeGenhacheLand extends BiomeGenBase
-{
-	@SuppressWarnings("unchecked")
-    public BiomeGenhacheLand()
-    {
-        super(40);
-        setBiomeName("hacheLand");
-        topBlock = Blocks.grass.getDefaultState();
-        fillerBlock = Blocks.dirt.getDefaultState();
-        theBiomeDecorator.generateLakes = true;
-	theBiomeDecorator.treesPerChunk = 5;
-	theBiomeDecorator.flowersPerChunk = 4;
-	theBiomeDecorator.grassPerChunk = 2;
-	theBiomeDecorator.deadBushPerChunk = 0;
-	theBiomeDecorator.mushroomsPerChunk = 10;
-	theBiomeDecorator.reedsPerChunk = 10;
-	theBiomeDecorator.cactiPerChunk = 0;
-   	theBiomeDecorator.sandPerChunk = 10;
-   	rainfall = 0.5F;
-   	setHeight(new BiomeGenBase.Height(0.1F, 1.0F));
-   	waterColorMultiplier = 0x000099;
 
-   	
-this.spawnableMonsterList.clear();
-this.spawnableCreatureList.clear();
-this.spawnableWaterCreatureList.clear();
-this.spawnableCaveCreatureList.clear();
-this.spawnableMonsterList.add(new SpawnListEntry(EntityOcelot.class, 5, 1, 5));
-
-    }
-
-    
-    @SideOnly(Side.CLIENT)
-public int getBiomeGrassColor(){return 0x330000;}
-@SideOnly(Side.CLIENT)
-public int getBiomeFoliageColor(){return 0x330000;}
-@SideOnly(Side.CLIENT)
-public int getSkyColorByTemp(float par1){return 0x90fff1;}
+static{
+Item.ToolMaterial enumt = EnumHelper.addToolMaterial("HACHEAXE", 3, 4000, 10F, 15, 30);block = (Item)(new ItemAxe(enumt){public Set<String> getToolClasses(ItemStack stack){
+HashMap<String, Integer> ret = new HashMap<String, Integer>();
+ret.put("axe", 3);
+return ret.keySet();
+}
+}).setUnlocalizedName("HacheAxe");
+GameRegistry.registerItem(block, "HacheAxe");
+block.setCreativeTab(mcreator_hacheTab.tab);
 
 }
 

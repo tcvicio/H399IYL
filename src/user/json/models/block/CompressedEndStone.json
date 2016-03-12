@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/CompressedEndStone","down": "blocks/CompressedEndStone","north": "blocks/CompressedEndStone","east": "blocks/CompressedEndStone","south": "blocks/CompressedEndStone","west": "blocks/CompressedEndStone","particle": "blocks/CompressedEndStone"
+    }
+}

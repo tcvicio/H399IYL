@@ -784,4 +784,157 @@
 </mod>
 
 
+<mod>
+
+	<name>
+		HacheArmor
+	</name>
+
+	<type>
+		Cloath
+	</type>
+
+	<description>
+		Armor is item that can be dressed up and gives you protection.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		CompressedEndStone
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		NightmareDimension
+	</name>
+
+	<type>
+		Dimension
+	</type>
+
+	<description>
+		Dimension is biome that is generated as new world that has portal to enter it.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HachePickaxe
+	</name>
+
+	<type>
+		Tool
+	</type>
+
+	<description>
+		Tool is item that helps you dig or attack faster and better. It has defined amount of usages.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheSword
+	</name>
+
+	<type>
+		Tool
+	</type>
+
+	<description>
+		Tool is item that helps you dig or attack faster and better. It has defined amount of usages.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheAxe
+	</name>
+
+	<type>
+		Tool
+	</type>
+
+	<description>
+		Tool is item that helps you dig or attack faster and better. It has defined amount of usages.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheShovel
+	</name>
+
+	<type>
+		Tool
+	</type>
+
+	<description>
+		Tool is item that helps you dig or attack faster and better. It has defined amount of usages.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheHoe
+	</name>
+
+	<type>
+		Tool
+	</type>
+
+	<description>
+		Tool is item that helps you dig or attack faster and better. It has defined amount of usages.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		Hacheipe399
+	</name>
+
+	<type>
+		Mob
+	</type>
+
+	<description>
+		Mob is living object with movement and specified shape. It can be monster or peaceful.
+	</description>
+
+</mod>
+
+
 </mods>

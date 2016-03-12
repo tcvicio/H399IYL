@@ -149,6 +149,15 @@ mcreator_alienChip mcreator_42 = new mcreator_alienChip();
 mcreator_autoSeederGUI mcreator_43 = new mcreator_autoSeederGUI();
 mcreator_commandBlockRecipe mcreator_44 = new mcreator_commandBlockRecipe();
 mcreator_secretRecord mcreator_45 = new mcreator_secretRecord();
+mcreator_hacheArmor mcreator_46 = new mcreator_hacheArmor();
+mcreator_compressedEndStone mcreator_47 = new mcreator_compressedEndStone();
+mcreator_nightmareDimension mcreator_48 = new mcreator_nightmareDimension();
+mcreator_hachePickaxe mcreator_49 = new mcreator_hachePickaxe();
+mcreator_hacheSword mcreator_50 = new mcreator_hacheSword();
+mcreator_hacheAxe mcreator_51 = new mcreator_hacheAxe();
+mcreator_hacheShovel mcreator_52 = new mcreator_hacheShovel();
+mcreator_hacheHoe mcreator_53 = new mcreator_hacheHoe();
+mcreator_hacheipe399 mcreator_54 = new mcreator_hacheipe399();
 
 
 @Override
@@ -199,6 +208,15 @@ if(mcreator_42.addFuel(fuel)!=0) return mcreator_42.addFuel(fuel);
 if(mcreator_43.addFuel(fuel)!=0) return mcreator_43.addFuel(fuel);
 if(mcreator_44.addFuel(fuel)!=0) return mcreator_44.addFuel(fuel);
 if(mcreator_45.addFuel(fuel)!=0) return mcreator_45.addFuel(fuel);
+if(mcreator_46.addFuel(fuel)!=0) return mcreator_46.addFuel(fuel);
+if(mcreator_47.addFuel(fuel)!=0) return mcreator_47.addFuel(fuel);
+if(mcreator_48.addFuel(fuel)!=0) return mcreator_48.addFuel(fuel);
+if(mcreator_49.addFuel(fuel)!=0) return mcreator_49.addFuel(fuel);
+if(mcreator_50.addFuel(fuel)!=0) return mcreator_50.addFuel(fuel);
+if(mcreator_51.addFuel(fuel)!=0) return mcreator_51.addFuel(fuel);
+if(mcreator_52.addFuel(fuel)!=0) return mcreator_52.addFuel(fuel);
+if(mcreator_53.addFuel(fuel)!=0) return mcreator_53.addFuel(fuel);
+if(mcreator_54.addFuel(fuel)!=0) return mcreator_54.addFuel(fuel);
 return 0;
 }
 
@@ -299,6 +317,24 @@ if(world.provider.getDimensionId()==-1)mcreator_44.generateNether(world, random,
 if(world.provider.getDimensionId()==0)mcreator_44.generateSurface(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==-1)mcreator_45.generateNether(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==0)mcreator_45.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_46.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_46.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_47.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_47.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_48.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_48.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_49.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_49.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_50.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_50.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_51.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_51.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_52.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_52.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_53.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_53.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_54.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_54.generateSurface(world, random, chunkX, chunkZ);
 
 
 }
@@ -358,6 +394,15 @@ mcreator_42.load(event);
 mcreator_43.load(event);
 mcreator_44.load(event);
 mcreator_45.load(event);
+mcreator_46.load(event);
+mcreator_47.load(event);
+mcreator_48.load(event);
+mcreator_49.load(event);
+mcreator_50.load(event);
+mcreator_51.load(event);
+mcreator_52.load(event);
+mcreator_53.load(event);
+mcreator_54.load(event);
 
 
 }
@@ -409,6 +454,15 @@ mcreator_42.serverLoad(event);
 mcreator_43.serverLoad(event);
 mcreator_44.serverLoad(event);
 mcreator_45.serverLoad(event);
+mcreator_46.serverLoad(event);
+mcreator_47.serverLoad(event);
+mcreator_48.serverLoad(event);
+mcreator_49.serverLoad(event);
+mcreator_50.serverLoad(event);
+mcreator_51.serverLoad(event);
+mcreator_52.serverLoad(event);
+mcreator_53.serverLoad(event);
+mcreator_54.serverLoad(event);
 }
 @EventHandler
 public void preInit(FMLPreInitializationEvent event){
@@ -458,6 +512,15 @@ mcreator_42.instance = this.instance;
 mcreator_43.instance = this.instance;
 mcreator_44.instance = this.instance;
 mcreator_45.instance = this.instance;
+mcreator_46.instance = this.instance;
+mcreator_47.instance = this.instance;
+mcreator_48.instance = this.instance;
+mcreator_49.instance = this.instance;
+mcreator_50.instance = this.instance;
+mcreator_51.instance = this.instance;
+mcreator_52.instance = this.instance;
+mcreator_53.instance = this.instance;
+mcreator_54.instance = this.instance;
 mcreator_0.preInit(event);
 mcreator_1.preInit(event);
 mcreator_2.preInit(event);
@@ -504,6 +567,15 @@ mcreator_42.preInit(event);
 mcreator_43.preInit(event);
 mcreator_44.preInit(event);
 mcreator_45.preInit(event);
+mcreator_46.preInit(event);
+mcreator_47.preInit(event);
+mcreator_48.preInit(event);
+mcreator_49.preInit(event);
+mcreator_50.preInit(event);
+mcreator_51.preInit(event);
+mcreator_52.preInit(event);
+mcreator_53.preInit(event);
+mcreator_54.preInit(event);
 proxy.registerRenderers(this);
 }
 public static class GuiHandler implements IGuiHandler {
