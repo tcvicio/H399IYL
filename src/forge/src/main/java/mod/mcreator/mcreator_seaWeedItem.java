@@ -124,7 +124,7 @@ setMaxDamage(0);
 maxStackSize = 64;
 setUnlocalizedName("SeaWeedItem");
 GameRegistry.registerItem(this, "SeaWeedItem");
-setCreativeTab(CreativeTabs.tabBlock);
+setCreativeTab(mcreator_hacheTab.tab);
 }
 public int getItemEnchantability()
 {

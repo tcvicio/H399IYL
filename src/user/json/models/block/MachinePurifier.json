@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/PurifierTop","down": "blocks/PurifierTop","north": "blocks/PurifierSide","east": "blocks/PurifierSide","south": "blocks/PurifierSide","west": "blocks/PurifierSide","particle": "blocks/PurifierTop"
+    }
+}

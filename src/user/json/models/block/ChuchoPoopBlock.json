@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/ChuchoPoopBlock","down": "blocks/ChuchoPoopBlock","north": "blocks/ChuchoPoopBlock","east": "blocks/ChuchoPoopBlock","south": "blocks/ChuchoPoopBlock","west": "blocks/ChuchoPoopBlock","particle": "blocks/ChuchoPoopBlock"
+    }
+}

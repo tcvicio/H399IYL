@@ -194,6 +194,23 @@ world.setBlockState(new BlockPos(i+1, j+1, k+2), Block.getBlockById(5).getStateF
 world.setBlockState(new BlockPos(i+2, j+1, k+2), Block.getBlockById(9).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+3, j+1, k+2), Block.getBlockById(89).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+4, j+1, k+2), Block.getBlockById(54).getStateFromMeta(3), 3);
+TileEntity sternChest = world.getTileEntity(new BlockPos(i+4, j+1, k+2));
+for (int slot = 0; slot < ((TileEntityChest) sternChest).getSizeInventory(); slot++) {
+	int probability = random.nextInt(100);
+	int quantity = random.nextInt(3)+1;
+	if (probability < 4) {
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(Items.rotten_flesh, quantity));
+	}
+	else if (probability == 50 || probability == 75) {
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_wreckedShipDiary.block, 1));
+	}
+	else if (probability == 25) {
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_goldRecord.block, 1));
+	}
+	else if (probability == 90) {
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_brownRecord.block, 1));
+	}
+}
 world.setBlockState(new BlockPos(i+5, j+1, k+2), Block.getBlockById(5).getStateFromMeta(1), 3);
 world.setBlockState(new BlockPos(i+6, j+1, k+2), Block.getBlockById(13).getStateFromMeta(0), 3);
 world.setBlockState(new BlockPos(i+0, j+1, k+3), Block.getBlockById(9).getStateFromMeta(0), 3);

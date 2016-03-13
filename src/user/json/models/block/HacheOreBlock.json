@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/HacheOreBlock","down": "blocks/HacheOreBlock","north": "blocks/HacheOreBlock","east": "blocks/HacheOreBlock","south": "blocks/HacheOreBlock","west": "blocks/HacheOreBlock","particle": "blocks/HacheOreBlock"
+    }
+}

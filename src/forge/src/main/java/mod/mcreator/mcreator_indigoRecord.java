@@ -157,7 +157,8 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§1§lX-tra Raw Hardstyle");
-list.add("Mind Dimension & Rooler - Nothing");
+list.add("Wild MFs - Fother Mucker");
+list.add("(Delete & Low Profile Remix)");
 }
 
 

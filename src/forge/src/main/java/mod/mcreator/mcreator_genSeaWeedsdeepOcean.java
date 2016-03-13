@@ -111,7 +111,7 @@ int chunkX = i >> 2;
 int chunkZ = k >> 2;
 int height = world.getChunkFromChunkCoords(chunkX, chunkZ).getHeight(new BlockPos(i & 15, 0, k & 15));
 
-int j = height-20;
+int j = height-33;
 if(world.getBiomeGenForCoords(new BlockPos(i, j, k)).biomeName.equals(BiomeGenBase.deepOcean.biomeName)) {
 
 
@@ -119,12 +119,29 @@ if((random.nextInt(1000000))<=1000000){
 boolean place = true;
 
 if(place){
-int addplacement = random.nextInt(20);
-world.setBlockState(new BlockPos(i+addplacement, j+0, k+addplacement), mcreator_weedPlant.block.getDefaultState(), 3);
-world.setBlockState(new BlockPos(i+addplacement, j+0, k+addplacement), mcreator_weedPlant.block.getDefaultState(), 3);
-world.setBlockState(new BlockPos(i+addplacement, j+0, k+addplacement), mcreator_weedPlant.block.getDefaultState(), 3);
-world.setBlockState(new BlockPos(i+addplacement, j+0, k+addplacement), mcreator_weedPlant.block.getDefaultState(), 3);
-world.setBlockState(new BlockPos(i+addplacement, j+0, k+addplacement), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+3, j+0, k+3), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+6, j+0, k+6), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+9, j+0, k+9), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+12, j+0, k+12), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+15, j+0, k+15), mcreator_weedPlant.block.getDefaultState(), 3);
+
+world.setBlockState(new BlockPos(i+3, j+1, k+3), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+6, j+1, k+6), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+9, j+1, k+9), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+12, j+1, k+12), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+15, j+1, k+15), mcreator_weedPlant.block.getDefaultState(), 3);
+
+world.setBlockState(new BlockPos(i+3, j+2, k+3), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+6, j+2, k+6), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+9, j+2, k+9), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+12, j+2, k+12), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+15, j+2, k+15), mcreator_weedPlant.block.getDefaultState(), 3);
+
+world.setBlockState(new BlockPos(i+3, j+3, k+3), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+6, j+3, k+6), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+9, j+3, k+9), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+12, j+3, k+12), mcreator_weedPlant.block.getDefaultState(), 3);
+world.setBlockState(new BlockPos(i+15, j+3, k+15), mcreator_weedPlant.block.getDefaultState(), 3);
 }
 }
 }

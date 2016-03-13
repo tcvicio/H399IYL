@@ -157,7 +157,7 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§c§lTekstyle");
-list.add("Mark with a K - See me now");
+list.add("Can't hold us (Mark with a K Remix)");
 }
 
 

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube",
-    "textures": {
-        "up": "blocks/SpeakerYellowFront","down": "blocks/SpeakerYellowFront","north": "blocks/SpeakerYellowFront","east": "blocks/SpeakerYellowFront","south": "blocks/SpeakerYellowFront","west": "blocks/SpeakerYellowFront","particle": "blocks/SpeakerYellowFront"
-    }
-}

@@ -157,7 +157,7 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§9§lEuphoric Hardstyle");
-list.add("Noiseshock - Beyond Reality");
+list.add("Noiseshock - Snow");
 }
 
 

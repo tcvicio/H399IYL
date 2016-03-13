@@ -151,7 +151,7 @@ public class mcreator_hacheipe399 {
 	        experienceValue = 50;
 	        this.isImmuneToFire = true;
 	        addRandomArmor();
-			setNoAI(!false);
+			setNoAI(!true);
         	
 	    }
 
@@ -181,7 +181,7 @@ this.dropItem(mcreator_secretRecord.block, 1);
 	    @Override
 	    protected String getLivingSound()
 	    {
-	        return "mob.bat.idle";
+	        return "mob.blaze.breathe";
 	    }
 
 	    @Override

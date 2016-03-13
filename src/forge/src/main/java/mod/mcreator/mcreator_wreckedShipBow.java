@@ -116,7 +116,7 @@ int j = height-33;
 if(world.getBiomeGenForCoords(new BlockPos(i, j, k)).biomeName.equals(BiomeGenBase.deepOcean.biomeName)) {
 
 
-if((random.nextInt(1000000)+1)<=1000000){
+if((random.nextInt(1000000)+1)<=10000){
 boolean place = true;
 
 if(place){

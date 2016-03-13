@@ -157,7 +157,8 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§c§lHardstyle");
-list.add("TNT & Isaac - CTRL");
+list.add("Francesco Zeta - Reverse bass");
+list.add("will never die");
 }
 
 

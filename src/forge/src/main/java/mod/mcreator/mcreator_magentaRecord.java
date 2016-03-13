@@ -158,7 +158,7 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§d§lOldschool (True) Hardstyle");
-list.add("Deepack - The prophecy");
+list.add("Alpha Twins - Smack my derb");
 }
 
 

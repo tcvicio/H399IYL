@@ -821,23 +821,6 @@
 <mod>
 
 	<name>
-		NightmareDimension
-	</name>
-
-	<type>
-		Dimension
-	</type>
-
-	<description>
-		Dimension is biome that is generated as new world that has portal to enter it.
-	</description>
-
-</mod>
-
-
-<mod>
-
-	<name>
 		HachePickaxe
 	</name>
 
@@ -932,6 +915,176 @@
 
 	<description>
 		Mob is living object with movement and specified shape. It can be monster or peaceful.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ChuhoPoopOre
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ChuchoPoopRaw
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ChuchoPoopBlock
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheOreBlock
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AleinOreBlock
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheHoeAlt
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		HacheAxeAlt
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		MachinePurifier
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		BarrierRecipe
+	</name>
+
+	<type>
+		Recipe
+	</type>
+
+	<description>
+		Recipe is defined set of blocks and items that gives you new block or item.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		PurifierGUI
+	</name>
+
+	<type>
+		BasicGUI
+	</type>
+
+	<description>
+		GUI which displays on event and shows button, slots and players inventory if selected.
 	</description>
 
 </mod>

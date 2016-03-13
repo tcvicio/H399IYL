@@ -1,23 +1,28 @@
 #Lang file was made using MCreator
-#Sat Mar 12 11:37:11 ART 2016
+#Sun Mar 13 17:22:57 ART 2016
 item.HacheHoe.name=Hache Hoe
+tile.AleinOreBlock.name=Alien Metal Block
 item.HacheGem.name=Hache Gem
 item.UvRecord.name=UV Defqon.1 Record
-item.VirginRecord.name=Virgin Disk
+item.VirginRecord.name=Base Disk
 item.SeaWeedItem.name=Sea Weed
 item.AlienIngot.name=Alien Ingot
 item.HacheSword.name=Hache Sword
 item.SecretRecord.name=Secret Defqon.1 Record
 tile.GenericModelBlock.name=tert
+tile.ChuchoPoopBlock.name=Chucho's Poop Ore
 item.BrownRecord.name=Brown Defqon.1 Record
 item.HacheShovel.name=Hache Shovel
+tile.ChuhoPoopOre.name=Chucho's Poop Ore
 item.MagentaRecord.name=Magenta Defqon.1 Record
+tile.HacheOreBlock.name=Hache Block
 item.SilverRecord.name=Silver Defqon.1 Record
 item.HacheArmor_leggins.name=Hache Leggings
 tile.AlienOre.name=Alien Ore
 item.BlueRecord.name=Blue Defqon.1 Disk
 item.GenericItem.name=Generic item
 tile.SpeakerYellow.name=Defqon.1 Speaker
+item.ChuchoPoopRaw.name=Chucho's Poop
 entity.hacheipe399.name=Hacheipe399
 item.HachePickaxe.name=Hache Pickaxe
 tile.Generic.name=TEST BLOCK
@@ -38,6 +43,7 @@ tile.SeaWeed.name=Sea Weed
 item.nightmareDimension_trigger.name=Alien igniter
 item.HacheArmor_body.name=Hache Body
 item.GoldRecord.name=Gold Defqon.1 Record
+tile.MachinePurifier.name=Purifier
 tile.CompressedEndStone.name=Compressed End Stone
 tile.DefqonOneSpeaker.name=Defqon.1 Speaker
 item.WhiteRecord.name=White Defqon.1 Record

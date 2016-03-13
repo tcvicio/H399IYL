@@ -151,13 +151,22 @@ mcreator_commandBlockRecipe mcreator_44 = new mcreator_commandBlockRecipe();
 mcreator_secretRecord mcreator_45 = new mcreator_secretRecord();
 mcreator_hacheArmor mcreator_46 = new mcreator_hacheArmor();
 mcreator_compressedEndStone mcreator_47 = new mcreator_compressedEndStone();
-mcreator_nightmareDimension mcreator_48 = new mcreator_nightmareDimension();
-mcreator_hachePickaxe mcreator_49 = new mcreator_hachePickaxe();
-mcreator_hacheSword mcreator_50 = new mcreator_hacheSword();
-mcreator_hacheAxe mcreator_51 = new mcreator_hacheAxe();
-mcreator_hacheShovel mcreator_52 = new mcreator_hacheShovel();
-mcreator_hacheHoe mcreator_53 = new mcreator_hacheHoe();
-mcreator_hacheipe399 mcreator_54 = new mcreator_hacheipe399();
+mcreator_hachePickaxe mcreator_48 = new mcreator_hachePickaxe();
+mcreator_hacheSword mcreator_49 = new mcreator_hacheSword();
+mcreator_hacheAxe mcreator_50 = new mcreator_hacheAxe();
+mcreator_hacheShovel mcreator_51 = new mcreator_hacheShovel();
+mcreator_hacheHoe mcreator_52 = new mcreator_hacheHoe();
+mcreator_hacheipe399 mcreator_53 = new mcreator_hacheipe399();
+mcreator_chuhoPoopOre mcreator_54 = new mcreator_chuhoPoopOre();
+mcreator_chuchoPoopRaw mcreator_55 = new mcreator_chuchoPoopRaw();
+mcreator_chuchoPoopBlock mcreator_56 = new mcreator_chuchoPoopBlock();
+mcreator_hacheOreBlock mcreator_57 = new mcreator_hacheOreBlock();
+mcreator_aleinOreBlock mcreator_58 = new mcreator_aleinOreBlock();
+mcreator_hacheHoeAlt mcreator_59 = new mcreator_hacheHoeAlt();
+mcreator_hacheAxeAlt mcreator_60 = new mcreator_hacheAxeAlt();
+mcreator_machinePurifier mcreator_61 = new mcreator_machinePurifier();
+mcreator_barrierRecipe mcreator_62 = new mcreator_barrierRecipe();
+mcreator_purifierGUI mcreator_63 = new mcreator_purifierGUI();
 
 
 @Override
@@ -217,6 +226,15 @@ if(mcreator_51.addFuel(fuel)!=0) return mcreator_51.addFuel(fuel);
 if(mcreator_52.addFuel(fuel)!=0) return mcreator_52.addFuel(fuel);
 if(mcreator_53.addFuel(fuel)!=0) return mcreator_53.addFuel(fuel);
 if(mcreator_54.addFuel(fuel)!=0) return mcreator_54.addFuel(fuel);
+if(mcreator_55.addFuel(fuel)!=0) return mcreator_55.addFuel(fuel);
+if(mcreator_56.addFuel(fuel)!=0) return mcreator_56.addFuel(fuel);
+if(mcreator_57.addFuel(fuel)!=0) return mcreator_57.addFuel(fuel);
+if(mcreator_58.addFuel(fuel)!=0) return mcreator_58.addFuel(fuel);
+if(mcreator_59.addFuel(fuel)!=0) return mcreator_59.addFuel(fuel);
+if(mcreator_60.addFuel(fuel)!=0) return mcreator_60.addFuel(fuel);
+if(mcreator_61.addFuel(fuel)!=0) return mcreator_61.addFuel(fuel);
+if(mcreator_62.addFuel(fuel)!=0) return mcreator_62.addFuel(fuel);
+if(mcreator_63.addFuel(fuel)!=0) return mcreator_63.addFuel(fuel);
 return 0;
 }
 
@@ -335,6 +353,24 @@ if(world.provider.getDimensionId()==-1)mcreator_53.generateNether(world, random,
 if(world.provider.getDimensionId()==0)mcreator_53.generateSurface(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==-1)mcreator_54.generateNether(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==0)mcreator_54.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_55.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_55.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_56.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_56.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_57.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_57.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_58.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_58.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_59.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_59.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_60.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_60.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_61.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_61.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_62.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_62.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_63.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_63.generateSurface(world, random, chunkX, chunkZ);
 
 
 }
@@ -403,6 +439,15 @@ mcreator_51.load(event);
 mcreator_52.load(event);
 mcreator_53.load(event);
 mcreator_54.load(event);
+mcreator_55.load(event);
+mcreator_56.load(event);
+mcreator_57.load(event);
+mcreator_58.load(event);
+mcreator_59.load(event);
+mcreator_60.load(event);
+mcreator_61.load(event);
+mcreator_62.load(event);
+mcreator_63.load(event);
 
 
 }
@@ -463,6 +508,15 @@ mcreator_51.serverLoad(event);
 mcreator_52.serverLoad(event);
 mcreator_53.serverLoad(event);
 mcreator_54.serverLoad(event);
+mcreator_55.serverLoad(event);
+mcreator_56.serverLoad(event);
+mcreator_57.serverLoad(event);
+mcreator_58.serverLoad(event);
+mcreator_59.serverLoad(event);
+mcreator_60.serverLoad(event);
+mcreator_61.serverLoad(event);
+mcreator_62.serverLoad(event);
+mcreator_63.serverLoad(event);
 }
 @EventHandler
 public void preInit(FMLPreInitializationEvent event){
@@ -521,6 +575,15 @@ mcreator_51.instance = this.instance;
 mcreator_52.instance = this.instance;
 mcreator_53.instance = this.instance;
 mcreator_54.instance = this.instance;
+mcreator_55.instance = this.instance;
+mcreator_56.instance = this.instance;
+mcreator_57.instance = this.instance;
+mcreator_58.instance = this.instance;
+mcreator_59.instance = this.instance;
+mcreator_60.instance = this.instance;
+mcreator_61.instance = this.instance;
+mcreator_62.instance = this.instance;
+mcreator_63.instance = this.instance;
 mcreator_0.preInit(event);
 mcreator_1.preInit(event);
 mcreator_2.preInit(event);
@@ -576,16 +639,27 @@ mcreator_51.preInit(event);
 mcreator_52.preInit(event);
 mcreator_53.preInit(event);
 mcreator_54.preInit(event);
+mcreator_55.preInit(event);
+mcreator_56.preInit(event);
+mcreator_57.preInit(event);
+mcreator_58.preInit(event);
+mcreator_59.preInit(event);
+mcreator_60.preInit(event);
+mcreator_61.preInit(event);
+mcreator_62.preInit(event);
+mcreator_63.preInit(event);
 proxy.registerRenderers(this);
 }
 public static class GuiHandler implements IGuiHandler {
 @Override public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 if(id == mcreator_wreckedShipStory.GUIID)return new mcreator_wreckedShipStory.GuiContainerMod(world, x, y, z, player);
 if(id == mcreator_autoSeederGUI.GUIID)return new mcreator_autoSeederGUI.GuiContainerMod(world, x, y, z, player);
+if(id == mcreator_purifierGUI.GUIID)return new mcreator_purifierGUI.GuiContainerMod(world, x, y, z, player);
 return null;}
 @Override public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 if(id == mcreator_wreckedShipStory.GUIID)return new mcreator_wreckedShipStory.GuiWindow(world, x, y, z, player);
 if(id == mcreator_autoSeederGUI.GUIID)return new mcreator_autoSeederGUI.GuiWindow(world, x, y, z, player);
+if(id == mcreator_purifierGUI.GUIID)return new mcreator_purifierGUI.GuiWindow(world, x, y, z, player);
 return null;}
 }
 

@@ -157,7 +157,8 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§e§lTerrorcore");
-list.add("Sequencer - Make it happen");
+list.add("Hellseeker - Blackened Horizon");
+list.add("(Unholy Xmas Master)");
 }
 
 

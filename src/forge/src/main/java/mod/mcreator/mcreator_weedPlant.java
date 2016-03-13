@@ -117,7 +117,7 @@ block = (BlockWeedPlant)(new BlockWeedPlant().setHardness(0.1F)
 .setResistance(1.0F)
 .setLightLevel(0.0F)
 .setUnlocalizedName("WeedPlant")
-.setLightOpacity(126)
+.setLightOpacity(255)
 .setStepSound(Block.soundTypeGrass)
 .setCreativeTab(mcreator_hacheTab.tab)
 );block.setBlockBounds(0.0F,0.0F,0.0F,1.0F,1.0F,1.0F);
@@ -164,7 +164,7 @@ return false;
 @SideOnly(Side.CLIENT)
 public EnumWorldBlockLayer getBlockLayer()
 {
-return EnumWorldBlockLayer.CUTOUT;
+return EnumWorldBlockLayer.TRANSLUCENT;
 }
 
 @Override

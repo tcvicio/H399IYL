@@ -103,8 +103,8 @@ public static Item block;public static Object instance;public void load(FMLIniti
 if(event.getSide() == Side.CLIENT)
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("TestEnvironmentMod:VirginRecord", "inventory"));
 
-GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
-	"X1X", "345", "X7X", Character.valueOf('1'), new ItemStack(Items.iron_ingot, 1), Character.valueOf('3'), new ItemStack(Items.iron_ingot, 1), Character.valueOf('4'), new ItemStack(Items.ender_pearl, 1), Character.valueOf('5'), new ItemStack(Items.iron_ingot, 1), Character.valueOf('7'), new ItemStack(Items.iron_ingot, 1), 
+GameRegistry.addRecipe(new ItemStack(block, 5), new Object[]{
+	"XXX", "345", "XXX", Character.valueOf('3'), new ItemStack(Items.iron_ingot, 1), Character.valueOf('4'), new ItemStack(mcreator_alienChip.block, 1), Character.valueOf('5'), new ItemStack(Items.iron_ingot, 1), 
 });}
 public void generateNether(World world, Random random, int chunkX, int chunkZ){}
 public void generateSurface(World world, Random random, int chunkX, int chunkZ){}

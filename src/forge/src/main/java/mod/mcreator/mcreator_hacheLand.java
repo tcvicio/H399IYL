@@ -101,7 +101,7 @@ public mcreator_hacheLand(){}
 public void load(FMLInitializationEvent event){
 BiomeDictionary.registerBiomeType(biome, BiomeDictionary.Type.FOREST);
 BiomeManager.addSpawnBiome(biome);
-BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 5));
+BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 2));
 }
 
 public void generateNether(World world, Random random, int chunkX, int chunkZ){}
@@ -132,7 +132,7 @@ static class BiomeGenhacheLand extends BiomeGenBase
 	theBiomeDecorator.cactiPerChunk = 0;
    	theBiomeDecorator.sandPerChunk = 10;
    	rainfall = 0.5F;
-   	setHeight(new BiomeGenBase.Height(0.1F, 1.0F));
+   	setHeight(new BiomeGenBase.Height(0.0F, 0.5F));
    	waterColorMultiplier = 0x000099;
 
    	
@@ -140,7 +140,7 @@ this.spawnableMonsterList.clear();
 this.spawnableCreatureList.clear();
 this.spawnableWaterCreatureList.clear();
 this.spawnableCaveCreatureList.clear();
-this.spawnableMonsterList.add(new SpawnListEntry(EntityOcelot.class, 5, 1, 5));
+this.spawnableMonsterList.add(new SpawnListEntry(mcreator_hacheipe399.Entityhacheipe399.class, 5, 1, 5));
 
     }
 

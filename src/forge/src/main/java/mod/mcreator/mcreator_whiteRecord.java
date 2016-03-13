@@ -157,7 +157,7 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§f§lSubground House");
-list.add("ACTI & Done Heavy - Ravelation");
+list.add("ACTI - The sound of Qult");
 }
 
 

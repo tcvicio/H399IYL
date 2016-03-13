@@ -157,7 +157,7 @@ return itemstack;
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§3§lRaw Hardstyle");
-list.add("Alpha Twins - Willow Waly");
+list.add("Gunz for Hire - Dopeman");
 }
 
 
