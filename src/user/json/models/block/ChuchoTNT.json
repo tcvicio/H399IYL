@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/ChuchoTNTTop","down": "blocks/ChuchoTNTBottom","north": "blocks/ChuchoTNTSide","east": "blocks/ChuchoTNTSide","south": "blocks/ChuchoTNTSide","west": "blocks/ChuchoTNTSide","particle": "blocks/ChuchoTNTBottom"
+    }
+}

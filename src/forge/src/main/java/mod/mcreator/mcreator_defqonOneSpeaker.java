@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -110,22 +110,22 @@ if(event.getSide() == Side.CLIENT){
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation("TestEnvironmentMod:DefqonOneSpeaker", "inventory"));}
 
 GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
-	"012", "345", "678", Character.valueOf('0'), new ItemStack(Blocks.planks, 1), Character.valueOf('1'), new ItemStack(Blocks.planks, 1), Character.valueOf('2'), new ItemStack(Blocks.planks, 1), Character.valueOf('3'), new ItemStack(Blocks.planks, 1), Character.valueOf('4'), new ItemStack(mcreator_alienChip.block, 1), Character.valueOf('5'), new ItemStack(Blocks.planks, 1), Character.valueOf('6'), new ItemStack(Blocks.planks, 1), Character.valueOf('7'), new ItemStack(Blocks.planks, 1), Character.valueOf('8'), new ItemStack(Blocks.planks, 1), 
+	"012", "345", "678", Character.valueOf('0'), new ItemStack(Blocks.planks, 1), Character.valueOf('1'), new ItemStack(Blocks.planks, 1), Character.valueOf('2'), new ItemStack(Blocks.planks, 1), Character.valueOf('3'), new ItemStack(Blocks.planks, 1), Character.valueOf('4'), new ItemStack(mcreator_alienChip.block, 1), Character.valueOf('5'), new ItemStack(Blocks.planks, 1), Character.valueOf('6'), new ItemStack(Blocks.planks, 1), Character.valueOf('7'), new ItemStack(Items.prismarine_crystals, 1), Character.valueOf('8'), new ItemStack(Blocks.planks, 1), 
 });
 }
 
 
 static{
 
-block = (BlockDefqonOneSpeaker)(new BlockDefqonOneSpeaker().setHardness(2.0F)
-.setResistance(15.0F)
-.setLightLevel(5.0F)
+block = (BlockDefqonOneSpeaker)(new BlockDefqonOneSpeaker().setHardness(4.0F)
+.setResistance(30.0F)
+.setLightLevel(0.0F)
 .setUnlocalizedName("DefqonOneSpeaker")
 .setLightOpacity(0)
 .setStepSound(Block.soundTypeWood)
 .setCreativeTab(mcreator_tabDefqon1.tab)
 );block.setBlockBounds(0.0F,0.0F,0.0F,1.0F,1.0F,1.0F);
-block.setHarvestLevel("axe", 0);
+block.setHarvestLevel("pickaxe", 0);
 }
 
 public void generateSurface(World world, Random random, int chunkX, int chunkZ){}
@@ -143,7 +143,7 @@ boolean red = false;
 
 protected BlockDefqonOneSpeaker()
 {
-        super(Material.ground);
+        super(Material.wood);
 
 GameRegistry.registerBlock(this, "DefqonOneSpeaker");
 
@@ -164,7 +164,7 @@ public void onBlockDestroyedByPlayer(World world, BlockPos pos, IBlockState stat
 EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
 int i = pos.getX();int j = pos.getY();int k = pos.getZ();
 if(true){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "test.zvok", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
 }
 
 }
@@ -172,62 +172,75 @@ public void onBlockDestroyedByExplosion(World world, BlockPos pos, Explosion e){
 EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
 int i = pos.getX();int j = pos.getY();int k = pos.getZ();
 if(true){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "test.zvok", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
 }
 
 }
 public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumFacing side, float hitX, float hitY, float hitZ){
 int i = pos.getX();int j = pos.getY();int k = pos.getZ();
-if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_blueRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.blue", 1.0F, 1.0F);
+if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_yellowRecord.block){
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.yellow", 1.0F, 1.0F);
 }
 
-if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_yellowRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.yellow", 1.0F, 1.0F);
+if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_blueRecord.block){
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.blue", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_redRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.red", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.red", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_magentaRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.magenta", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.magenta", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_blackRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.black", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.black", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_goldRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.gold", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.gold", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_whiteRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.white", 1.0F, 1.0F);
-}
-
-if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_indigoRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.indigo", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.white", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_brownRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.brown", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.brown", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_uvRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.uv", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.uv", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_purpleRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.purple", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.purple", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_silverRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.silver", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.silver", 1.0F, 1.0F);
+}
+
+if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_indigoRecord.block){
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.indigo", 1.0F, 1.0F);
 }
 
 if(entity.inventory.getCurrentItem()!=null&&entity.inventory.getCurrentItem().getItem() == mcreator_secretRecord.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.secret", 1.0F, 1.0F);
+ Minecraft.getMinecraft().getSoundHandler().stopSounds();
+ world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.secret", 1.0F, 1.0F);
 }
 
 return true;}

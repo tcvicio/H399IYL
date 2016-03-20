@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=z": { "model": "TestEnvironmentMod:thatPlanet_portal_ew" },
+        "axis=x": { "model": "TestEnvironmentMod:thatPlanet_portal_ns" },
+		"inventory": { "model": "TestEnvironmentMod:thatPlanet_portal_ns" }
+    }
+}

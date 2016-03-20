@@ -1,4 +1,4 @@
-
+package mod.mcreator;import net.minecraftforge.fml.client.*;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;

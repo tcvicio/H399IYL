@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -121,7 +121,7 @@ public class mcreator_hacheipe399 {
 		EntityRegistry.registerGlobalEntityID(mcreator_hacheipe399.Entityhacheipe399.class, "hacheipe399", entityID);
 		EntityRegistry.registerModEntity(mcreator_hacheipe399.Entityhacheipe399.class, "hacheipe399", entityID, instance, 64, 1, true);
 		EntityList.entityEggs.put(Integer.valueOf(entityID), new EntityList.EntityEggInfo(entityID, (51 << 16) + (0 << 8) + 0, (51 << 16) + (51 << 8) + 255));
-		EntityRegistry.addSpawn(mcreator_hacheipe399.Entityhacheipe399.class, 5, 3, 30, EnumCreatureType.MONSTER , clean(BiomeGenBase.getBiomeGenArray()));
+		EntityRegistry.addSpawn(mcreator_hacheipe399.Entityhacheipe399.class, 1, 1, 4, EnumCreatureType.MONSTER , clean(BiomeGenBase.getBiomeGenArray()));
 
         DungeonHooks.addDungeonMob("hacheipe399", 180);
 	}

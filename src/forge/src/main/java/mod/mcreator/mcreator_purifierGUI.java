@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -99,7 +99,7 @@ public class mcreator_purifierGUI {
 
 public static Object instance;
 
-public static int GUIID = 4;
+public static int GUIID = 6;
 
 public mcreator_purifierGUI(){}
 
@@ -114,9 +114,10 @@ public int addFuel(ItemStack fuel){
 public void serverLoad(FMLServerStartingEvent event){}
 public void preInit(FMLPreInitializationEvent event){}
 
-public static IInventory purifierinv;
 
 public static IInventory inherited;
+
+public static boolean powered = false;
 
 public static class GuiContainerMod extends Container {
 		
@@ -132,8 +133,14 @@ public static class GuiContainerMod extends Container {
 			this.j = j;
 			this.k = k;
 			
-			purifierinv = new InventoryBasic("purifierinv", true, 9);
-this.addSlotToContainer(new Slot(purifierinv, 0, 25, 35){
+			TileEntity ent = world.getTileEntity(new BlockPos(i,j,k));
+if( ent != null && (ent instanceof mcreator_machinePurifier.TileEntityCustom))
+inherited = (IInventory)ent;
+else
+inherited = new InventoryBasic("", true, 9);
+
+
+this.addSlotToContainer(new Slot(inherited, 0, 8, 52){
 public boolean isItemValid(ItemStack stack){return ((stack != null)&&stack.getItem()==mcreator_hacheGem.block );}
 public void onSlotChanged(){
 super.onSlotChanged();if(getHasStack()){
@@ -144,14 +151,15 @@ int k = (int)entity.posZ;
 MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
 World world = server.worldServers[0];
 
-if((purifierinv.getStackInSlot(00) !=null ) &&purifierinv.getStackInSlot(00).getItem() == mcreator_hacheGem.block){
-MinecraftServer.getServer().addChatMessage(new ChatComponentText("Purifier fueled"));
-}
+if((inherited.getStackInSlot(00) !=null ) &&inherited.getStackInSlot(00).getItem() == mcreator_hacheGem.block){
+powered = true;
+} else if (inherited.getStackInSlot(00)==null){
+	powered = false;
+	}
 
 }}
 });
-this.addSlotToContainer(new Slot(purifierinv, 1, 142, 35){
-public boolean isItemValid(ItemStack stack){return false;}
+this.addSlotToContainer(new Slot(inherited, 1, 46, 31){
 public void onSlotChanged(){
 super.onSlotChanged();if(getHasStack()){
 EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
@@ -161,9 +169,13 @@ int k = (int)entity.posZ;
 MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
 World world = server.worldServers[0];
 
+if((inherited.getStackInSlot(01) !=null ) &&inherited.getStackInSlot(01).getItem() == mcreator_chuchoPoopRaw.block){
+if(powered){inherited.setInventorySlotContents(02, new ItemStack(mcreator_purifiedChuchoPoop.block, 1));}
+}
+
 }}
 });
-this.addSlotToContainer(new Slot(purifierinv, 2, 25, 56){
+this.addSlotToContainer(new Slot(inherited, 2, 120, 30){
 public void onSlotChanged(){
 super.onSlotChanged();if(getHasStack()){
 EntityPlayer entity = Minecraft.getMinecraft().thePlayer;
@@ -172,10 +184,6 @@ int j = (int)entity.posY;
 int k = (int)entity.posZ;
 MinecraftServer server = FMLCommonHandler.instance().getMinecraftServerInstance();
 World world = server.worldServers[0];
-
-if((purifierinv.getStackInSlot(02) !=null ) &&purifierinv.getStackInSlot(02).getItem() == mcreator_chuchoPoopRaw.block){
-purifierinv.setInventorySlotContents(01, new ItemStack(Items.nether_star, 1));
-}
 
 }}
 });
@@ -241,15 +249,7 @@ bindPlayerInventory(player.inventory);
     {
         super.onContainerClosed(playerIn);
 
-		World world2 = null;
-WorldServer[] list = MinecraftServer.getServer().worldServers;
-for(WorldServer ins : list)
-if(ins.provider.getDimensionId()==entity.worldObj.provider.getDimensionId())
-world2 = ins;
-if(world2==null)
-world2 = list[0];
-InventoryHelper.dropInventoryItems(world2, new BlockPos(i,j,k), purifierinv);
-
+		
 		
         
     }
@@ -291,6 +291,9 @@ this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
 
     zLevel = 100.0F;
     
+this.mc.renderEngine.bindTexture(new ResourceLocation("emptyprogress.png"));
+this.drawTexturedModalRect((this.guiLeft + 73), (this.guiTop + 31), 0, 0, 256, 256);
+
 
 }
 
@@ -323,7 +326,7 @@ if (par2 != 28 && par2 != 156){
 protected void drawGuiContainerForegroundLayer(int par1, int par2){
 	int posX = (this.width) /2;
 	int posY = (this.height) /2;
-	this.fontRendererObj.drawString("Purifier", (68), (3), 0x333333);
+	this.fontRendererObj.drawString("Purifier", (72), (7), 0x333333);
 
 }
 

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/IntegralStone","down": "blocks/IntegralStone","north": "blocks/IntegralStone","east": "blocks/IntegralStone","south": "blocks/IntegralStone","west": "blocks/IntegralStone","particle": "blocks/IntegralStone"
+    }
+}

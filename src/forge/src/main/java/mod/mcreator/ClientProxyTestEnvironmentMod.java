@@ -1,4 +1,4 @@
-
+package mod.mcreator;import net.minecraft.block.*;
 import net.minecraft.block.material.*;
 import net.minecraft.client.*;
 import net.minecraft.client.audio.*;
@@ -152,6 +152,13 @@ ins.mcreator_60.registerRenderers();
 ins.mcreator_61.registerRenderers();
 ins.mcreator_62.registerRenderers();
 ins.mcreator_63.registerRenderers();
+ins.mcreator_64.registerRenderers();
+ins.mcreator_65.registerRenderers();
+ins.mcreator_66.registerRenderers();
+ins.mcreator_67.registerRenderers();
+ins.mcreator_68.registerRenderers();
+ins.mcreator_69.registerRenderers();
+ins.mcreator_70.registerRenderers();
 
 	}
 }

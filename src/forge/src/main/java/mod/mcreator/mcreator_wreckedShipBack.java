@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -111,11 +111,11 @@ int chunkX = i >> 4;
 int chunkZ = k >> 4;
 int height = world.getChunkFromChunkCoords(chunkX, chunkZ).getHeight(new BlockPos(i & 15, 0, k & 15));
 
-int j = height-1;
+int j = height-33;
 if(world.getBiomeGenForCoords(new BlockPos(i, j, k)).biomeName.equals(BiomeGenBase.deepOcean.biomeName)) {
 
 
-if((random.nextInt(1000000)+1)<=1000000){
+if((random.nextInt(1000000)+1)<=100000){
 boolean place = true;
 
 if(place){
@@ -202,13 +202,13 @@ for (int slot = 0; slot < ((TileEntityChest) sternChest).getSizeInventory(); slo
 		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(Items.rotten_flesh, quantity));
 	}
 	else if (probability == 50 || probability == 75) {
-		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_wreckedShipDiary.block, 1));
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_wreckedShipDiary.block));
 	}
 	else if (probability == 25) {
-		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_goldRecord.block, 1));
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_brownRecord.block));
 	}
 	else if (probability == 90) {
-		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_brownRecord.block, 1));
+		((TileEntityChest) sternChest).setInventorySlotContents(slot, new ItemStack(mcreator_goldRecord.block));
 	}
 }
 world.setBlockState(new BlockPos(i+5, j+1, k+2), Block.getBlockById(5).getStateFromMeta(1), 3);

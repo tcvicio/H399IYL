@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -152,12 +152,16 @@ if(world.getBlockState(new BlockPos(i, j, k)) == mcreator_defqonOneSpeaker.block
 world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.brown", 1.0F, 1.0F);
 }
 
+if(world.getBlockState(new BlockPos(i, j, k)) == mcreator_defqonOneSpeaker.block){
+if(entity instanceof EntityPlayer)((EntityPlayer)entity).inventory.consumeInventoryItem(mcreator_brownRecord.block);
+}
+
 return itemstack;
 }
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
 list.add("§c§lTekstyle");
-list.add("Can't hold us (Mark with a K Remix)");
+list.add("Can't Hold Us (Mark with a K Remix)");
 }
 
 

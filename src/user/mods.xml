@@ -124,23 +124,6 @@
 <mod>
 
 	<name>
-		DefqonOneSpeaker
-	</name>
-
-	<type>
-		Block
-	</type>
-
-	<description>
-		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
-	</description>
-
-</mod>
-
-
-<mod>
-
-	<name>
 		BlueRecord
 	</name>
 
@@ -1076,6 +1059,57 @@
 <mod>
 
 	<name>
+		CompressedObsidian
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		IntegralStone
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ArchAlienTech
+	</name>
+
+	<type>
+		Achievement
+	</type>
+
+	<description>
+		Achievement is text displayed when user does something that is required to achieve.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
 		PurifierGUI
 	</name>
 
@@ -1085,6 +1119,91 @@
 
 	<description>
 		GUI which displays on event and shows button, slots and players inventory if selected.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		InterspaceTransmitter
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ThatPlanet
+	</name>
+
+	<type>
+		Dimension
+	</type>
+
+	<description>
+		Dimension is biome that is generated as new world that has portal to enter it.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		PurifiedChuchoPoop
+	</name>
+
+	<type>
+		Item
+	</type>
+
+	<description>
+		Item is object that can be hold in the hand. You can use it. It has damage.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		DefqonOneSpeaker
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ChuchoTNT
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
 	</description>
 
 </mod>

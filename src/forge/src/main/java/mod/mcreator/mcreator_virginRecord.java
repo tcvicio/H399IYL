@@ -1,4 +1,4 @@
-
+package mod.mcreator;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -103,7 +103,7 @@ public static Item block;public static Object instance;public void load(FMLIniti
 if(event.getSide() == Side.CLIENT)
 Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation("TestEnvironmentMod:VirginRecord", "inventory"));
 
-GameRegistry.addRecipe(new ItemStack(block, 5), new Object[]{
+GameRegistry.addRecipe(new ItemStack(block, 1), new Object[]{
 	"XXX", "345", "XXX", Character.valueOf('3'), new ItemStack(Items.iron_ingot, 1), Character.valueOf('4'), new ItemStack(mcreator_alienChip.block, 1), Character.valueOf('5'), new ItemStack(Items.iron_ingot, 1), 
 });}
 public void generateNether(World world, Random random, int chunkX, int chunkZ){}

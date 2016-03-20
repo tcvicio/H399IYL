@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/CompressedObsidian","down": "blocks/CompressedObsidian","north": "blocks/CompressedObsidian","east": "blocks/CompressedObsidian","south": "blocks/CompressedObsidian","west": "blocks/CompressedObsidian","particle": "blocks/CompressedObsidian"
+    }
+}

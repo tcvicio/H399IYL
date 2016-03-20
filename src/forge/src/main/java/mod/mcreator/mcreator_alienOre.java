@@ -1,4 +1,4 @@
-
+package mod.mcreator;import net.minecraftforge.fml.client.*;
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -168,7 +168,7 @@ return red?15:0;
 public void onBlockClicked(World world, BlockPos pos, EntityPlayer entity){
 int i = pos.getX();int j = pos.getY();int k = pos.getZ();
 if(true){
-world.spawnEntityInWorld(new EntityLightningBolt(world, i, j, k));
+setLightLevel(3.0F);
 }
 
 }

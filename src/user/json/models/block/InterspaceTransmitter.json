@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/SpaceTransmitter","down": "blocks/SpaceTransmitter","north": "blocks/SpaceTransmitter","east": "blocks/SpaceTransmitter","south": "blocks/SpaceTransmitter","west": "blocks/SpaceTransmitter","particle": "blocks/SpaceTransmitter"
+    }
+}
