@@ -1,7 +1,7 @@
 {
     "textures": {
-        "particle": "blocks/IntegralStone",
-        "portal": "blocks/IntegralStone"
+        "particle": "blocks/ThatPlanetBlock",
+        "portal": "blocks/ThatPlanetBlock"
     },
     "elements": [
         {   "from": [ 6, 0, 0 ],

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "blocks/ThatPlanetBlock","down": "blocks/ThatPlanetBlock","north": "blocks/ThatPlanetBlock","east": "blocks/ThatPlanetBlock","south": "blocks/ThatPlanetBlock","west": "blocks/ThatPlanetBlock","particle": "blocks/ThatPlanetBlock"
+    }
+}

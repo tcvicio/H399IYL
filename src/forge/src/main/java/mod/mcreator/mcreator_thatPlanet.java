@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -182,7 +182,7 @@ public void preInit(FMLPreInitializationEvent event){}
 public static class WorldProviderMod extends WorldProvider{
 
     public void registerWorldChunkManager(){
-        this.worldChunkMgr = new WorldChunkManagerHell(BiomeGenBase.desert, 0.0F);
+        this.worldChunkMgr = new WorldChunkManagerHell(mcreator_thatPlanetBiomeBase.biome, 0.0F);
         this.isHellWorld = true;
         this.hasNoSky = true;
         this.dimensionId = DIMID;
@@ -195,11 +195,11 @@ public static class WorldProviderMod extends WorldProvider{
 
     @SideOnly(Side.CLIENT)
 	public Vec3 getFogColor(float par1, float par2){
-	    return new Vec3(0.0D,0.0D,0.2D);
+	    return new Vec3(0.0D,0.0D,0.0D);
     }
 
     public IChunkProvider createChunkGenerator(){
-        return new ChunkProviderModded(this.worldObj, this.worldObj.getSeed()-16135);
+        return new ChunkProviderModded(this.worldObj, this.worldObj.getSeed()-1640);
     }
 
     public boolean isSurfaceWorld(){
@@ -1065,7 +1065,7 @@ else
 d2 = (double)par4 + 0.5D + 0.25D * (double)i1;
 d5 = (double)(par5Random.nextFloat() * 2.0F * (float)i1);
 }
-par1World.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, d0, d1, d2, d3, d4, d5);
+par1World.spawnParticle(EnumParticleTypes.FIREWORKS_SPARK, d0, d1, d2, d3, d4, d5);
 }
 }
 @SideOnly(Side.CLIENT)
@@ -1304,7 +1304,7 @@ public static class ChunkProviderModded implements IChunkProvider
                             {
                                 if ((d15 += d16) > 0.0D)
                                 {
-                                    p_147424_3_[j3 += short1] = Blocks.end_stone;
+                                    p_147424_3_[j3 += short1] = mcreator_thatPlanetGround.block;
                                 }
                                 else if (k2 * 8 + l2 < b0)
                                 {
@@ -1450,11 +1450,11 @@ public static class ChunkProviderModded implements IChunkProvider
                             {
                                 if ((d15 += d16) > 0.0D)
                                 {
-                                    p_180518_3_.setBlockState(k * 4 + i3, k2 * 8 + l2, j1 * 4 + j3, Blocks.end_stone.getDefaultState());
+                                    p_180518_3_.setBlockState(k * 4 + i3, k2 * 8 + l2, j1 * 4 + j3, mcreator_thatPlanetGround.block.getDefaultState());
                                 }
                                 else if (k2 * 8 + l2 < 63)
                                 {
-                                    p_180518_3_.setBlockState(k * 4 + i3, k2 * 8 + l2, j1 * 4 + j3, Blocks.end_stone.getDefaultState());
+                                    p_180518_3_.setBlockState(k * 4 + i3, k2 * 8 + l2, j1 * 4 + j3, mcreator_thatPlanetGround.block.getDefaultState());
                                 }
                             }
 

@@ -1,4 +1,4 @@
-package mod.mcreator;import net.minecraft.block.*;
+
 import net.minecraft.block.material.*;
 import net.minecraft.client.*;
 import net.minecraft.client.audio.*;
@@ -103,77 +103,81 @@ public class TestEnvironmentMod implements IFuelHandler, IWorldGenerator{
 	@Instance(MODID)
     public static TestEnvironmentMod instance;
 
-	mcreator_hacheLand mcreator_0 = new mcreator_hacheLand();
-mcreator_beachPalm mcreator_1 = new mcreator_beachPalm();
-mcreator_seaWeedItem mcreator_2 = new mcreator_seaWeedItem();
-mcreator_yellowRecord mcreator_3 = new mcreator_yellowRecord();
-mcreator_tabDefqon1 mcreator_4 = new mcreator_tabDefqon1();
-mcreator_wreckedShipBack mcreator_5 = new mcreator_wreckedShipBack();
-mcreator_virginRecord mcreator_6 = new mcreator_virginRecord();
-mcreator_blueRecord mcreator_7 = new mcreator_blueRecord();
-mcreator_redRecord mcreator_8 = new mcreator_redRecord();
-mcreator_genSeaWeeds mcreator_9 = new mcreator_genSeaWeeds();
-mcreator_weedPlant mcreator_10 = new mcreator_weedPlant();
-mcreator_magentaRecord mcreator_11 = new mcreator_magentaRecord();
-mcreator_blackRecord mcreator_12 = new mcreator_blackRecord();
-mcreator_goldRecord mcreator_13 = new mcreator_goldRecord();
-mcreator_whiteRecord mcreator_14 = new mcreator_whiteRecord();
-mcreator_brownRecord mcreator_15 = new mcreator_brownRecord();
-mcreator_shapelessRedRecord mcreator_16 = new mcreator_shapelessRedRecord();
-mcreator_uvRecord mcreator_17 = new mcreator_uvRecord();
-mcreator_purpleRecord mcreator_18 = new mcreator_purpleRecord();
-mcreator_silverRecord mcreator_19 = new mcreator_silverRecord();
-mcreator_shapelessBlackRecord mcreator_20 = new mcreator_shapelessBlackRecord();
-mcreator_shapelessWhiteRecord mcreator_21 = new mcreator_shapelessWhiteRecord();
-mcreator_shapelessUVRecord mcreator_22 = new mcreator_shapelessUVRecord();
-mcreator_shapelessGoldRecord mcreator_23 = new mcreator_shapelessGoldRecord();
-mcreator_shapelessYellowRecord mcreator_24 = new mcreator_shapelessYellowRecord();
-mcreator_shapelessMagentaRecord mcreator_25 = new mcreator_shapelessMagentaRecord();
-mcreator_shapelessBrownRecord mcreator_26 = new mcreator_shapelessBrownRecord();
-mcreator_shapelessPurpleRecord mcreator_27 = new mcreator_shapelessPurpleRecord();
-mcreator_shapelessSilverRecord mcreator_28 = new mcreator_shapelessSilverRecord();
-mcreator_shapelessBlueRecord mcreator_29 = new mcreator_shapelessBlueRecord();
-mcreator_indigoRecord mcreator_30 = new mcreator_indigoRecord();
-mcreator_shapelessIndigoRecord mcreator_31 = new mcreator_shapelessIndigoRecord();
-mcreator_wreckedShipStory mcreator_32 = new mcreator_wreckedShipStory();
-mcreator_wreckedShipDiary mcreator_33 = new mcreator_wreckedShipDiary();
-mcreator_alienOre mcreator_34 = new mcreator_alienOre();
-mcreator_alienIngot mcreator_35 = new mcreator_alienIngot();
-mcreator_hacheOre mcreator_36 = new mcreator_hacheOre();
-mcreator_hacheGem mcreator_37 = new mcreator_hacheGem();
-mcreator_hacheTab mcreator_38 = new mcreator_hacheTab();
-mcreator_wreckedShipBow mcreator_39 = new mcreator_wreckedShipBow();
-mcreator_genSeaWeedsdeepOcean mcreator_40 = new mcreator_genSeaWeedsdeepOcean();
-mcreator_alienChip mcreator_41 = new mcreator_alienChip();
-mcreator_autoSeederGUI mcreator_42 = new mcreator_autoSeederGUI();
-mcreator_commandBlockRecipe mcreator_43 = new mcreator_commandBlockRecipe();
-mcreator_secretRecord mcreator_44 = new mcreator_secretRecord();
-mcreator_hacheArmor mcreator_45 = new mcreator_hacheArmor();
-mcreator_compressedEndStone mcreator_46 = new mcreator_compressedEndStone();
-mcreator_hachePickaxe mcreator_47 = new mcreator_hachePickaxe();
-mcreator_hacheSword mcreator_48 = new mcreator_hacheSword();
-mcreator_hacheAxe mcreator_49 = new mcreator_hacheAxe();
-mcreator_hacheShovel mcreator_50 = new mcreator_hacheShovel();
-mcreator_hacheHoe mcreator_51 = new mcreator_hacheHoe();
-mcreator_hacheipe399 mcreator_52 = new mcreator_hacheipe399();
-mcreator_chuhoPoopOre mcreator_53 = new mcreator_chuhoPoopOre();
-mcreator_chuchoPoopRaw mcreator_54 = new mcreator_chuchoPoopRaw();
-mcreator_chuchoPoopBlock mcreator_55 = new mcreator_chuchoPoopBlock();
-mcreator_hacheOreBlock mcreator_56 = new mcreator_hacheOreBlock();
-mcreator_aleinOreBlock mcreator_57 = new mcreator_aleinOreBlock();
-mcreator_hacheHoeAlt mcreator_58 = new mcreator_hacheHoeAlt();
-mcreator_hacheAxeAlt mcreator_59 = new mcreator_hacheAxeAlt();
-mcreator_machinePurifier mcreator_60 = new mcreator_machinePurifier();
-mcreator_barrierRecipe mcreator_61 = new mcreator_barrierRecipe();
-mcreator_compressedObsidian mcreator_62 = new mcreator_compressedObsidian();
-mcreator_integralStone mcreator_63 = new mcreator_integralStone();
-mcreator_archAlienTech mcreator_64 = new mcreator_archAlienTech();
-mcreator_purifierGUI mcreator_65 = new mcreator_purifierGUI();
-mcreator_interspaceTransmitter mcreator_66 = new mcreator_interspaceTransmitter();
-mcreator_thatPlanet mcreator_67 = new mcreator_thatPlanet();
-mcreator_purifiedChuchoPoop mcreator_68 = new mcreator_purifiedChuchoPoop();
-mcreator_defqonOneSpeaker mcreator_69 = new mcreator_defqonOneSpeaker();
-mcreator_chuchoTNT mcreator_70 = new mcreator_chuchoTNT();
+	mcreator_beachPalm mcreator_0 = new mcreator_beachPalm();
+mcreator_seaWeedItem mcreator_1 = new mcreator_seaWeedItem();
+mcreator_yellowRecord mcreator_2 = new mcreator_yellowRecord();
+mcreator_tabDefqon1 mcreator_3 = new mcreator_tabDefqon1();
+mcreator_wreckedShipBack mcreator_4 = new mcreator_wreckedShipBack();
+mcreator_virginRecord mcreator_5 = new mcreator_virginRecord();
+mcreator_blueRecord mcreator_6 = new mcreator_blueRecord();
+mcreator_redRecord mcreator_7 = new mcreator_redRecord();
+mcreator_genSeaWeeds mcreator_8 = new mcreator_genSeaWeeds();
+mcreator_weedPlant mcreator_9 = new mcreator_weedPlant();
+mcreator_magentaRecord mcreator_10 = new mcreator_magentaRecord();
+mcreator_blackRecord mcreator_11 = new mcreator_blackRecord();
+mcreator_goldRecord mcreator_12 = new mcreator_goldRecord();
+mcreator_whiteRecord mcreator_13 = new mcreator_whiteRecord();
+mcreator_brownRecord mcreator_14 = new mcreator_brownRecord();
+mcreator_shapelessRedRecord mcreator_15 = new mcreator_shapelessRedRecord();
+mcreator_uvRecord mcreator_16 = new mcreator_uvRecord();
+mcreator_purpleRecord mcreator_17 = new mcreator_purpleRecord();
+mcreator_silverRecord mcreator_18 = new mcreator_silverRecord();
+mcreator_shapelessBlackRecord mcreator_19 = new mcreator_shapelessBlackRecord();
+mcreator_shapelessWhiteRecord mcreator_20 = new mcreator_shapelessWhiteRecord();
+mcreator_shapelessUVRecord mcreator_21 = new mcreator_shapelessUVRecord();
+mcreator_shapelessGoldRecord mcreator_22 = new mcreator_shapelessGoldRecord();
+mcreator_shapelessYellowRecord mcreator_23 = new mcreator_shapelessYellowRecord();
+mcreator_shapelessMagentaRecord mcreator_24 = new mcreator_shapelessMagentaRecord();
+mcreator_shapelessBrownRecord mcreator_25 = new mcreator_shapelessBrownRecord();
+mcreator_shapelessPurpleRecord mcreator_26 = new mcreator_shapelessPurpleRecord();
+mcreator_shapelessSilverRecord mcreator_27 = new mcreator_shapelessSilverRecord();
+mcreator_shapelessBlueRecord mcreator_28 = new mcreator_shapelessBlueRecord();
+mcreator_indigoRecord mcreator_29 = new mcreator_indigoRecord();
+mcreator_shapelessIndigoRecord mcreator_30 = new mcreator_shapelessIndigoRecord();
+mcreator_wreckedShipStory mcreator_31 = new mcreator_wreckedShipStory();
+mcreator_wreckedShipDiary mcreator_32 = new mcreator_wreckedShipDiary();
+mcreator_alienOre mcreator_33 = new mcreator_alienOre();
+mcreator_alienIngot mcreator_34 = new mcreator_alienIngot();
+mcreator_hacheOre mcreator_35 = new mcreator_hacheOre();
+mcreator_hacheGem mcreator_36 = new mcreator_hacheGem();
+mcreator_hacheTab mcreator_37 = new mcreator_hacheTab();
+mcreator_wreckedShipBow mcreator_38 = new mcreator_wreckedShipBow();
+mcreator_genSeaWeedsdeepOcean mcreator_39 = new mcreator_genSeaWeedsdeepOcean();
+mcreator_alienChip mcreator_40 = new mcreator_alienChip();
+mcreator_autoSeederGUI mcreator_41 = new mcreator_autoSeederGUI();
+mcreator_commandBlockRecipe mcreator_42 = new mcreator_commandBlockRecipe();
+mcreator_secretRecord mcreator_43 = new mcreator_secretRecord();
+mcreator_hacheArmor mcreator_44 = new mcreator_hacheArmor();
+mcreator_compressedEndStone mcreator_45 = new mcreator_compressedEndStone();
+mcreator_hachePickaxe mcreator_46 = new mcreator_hachePickaxe();
+mcreator_hacheSword mcreator_47 = new mcreator_hacheSword();
+mcreator_hacheAxe mcreator_48 = new mcreator_hacheAxe();
+mcreator_hacheShovel mcreator_49 = new mcreator_hacheShovel();
+mcreator_hacheHoe mcreator_50 = new mcreator_hacheHoe();
+mcreator_hacheipe399 mcreator_51 = new mcreator_hacheipe399();
+mcreator_chuhoPoopOre mcreator_52 = new mcreator_chuhoPoopOre();
+mcreator_chuchoPoopRaw mcreator_53 = new mcreator_chuchoPoopRaw();
+mcreator_chuchoPoopBlock mcreator_54 = new mcreator_chuchoPoopBlock();
+mcreator_hacheOreBlock mcreator_55 = new mcreator_hacheOreBlock();
+mcreator_aleinOreBlock mcreator_56 = new mcreator_aleinOreBlock();
+mcreator_hacheHoeAlt mcreator_57 = new mcreator_hacheHoeAlt();
+mcreator_hacheAxeAlt mcreator_58 = new mcreator_hacheAxeAlt();
+mcreator_machinePurifier mcreator_59 = new mcreator_machinePurifier();
+mcreator_barrierRecipe mcreator_60 = new mcreator_barrierRecipe();
+mcreator_compressedObsidian mcreator_61 = new mcreator_compressedObsidian();
+mcreator_integralStone mcreator_62 = new mcreator_integralStone();
+mcreator_archAlienTech mcreator_63 = new mcreator_archAlienTech();
+mcreator_purifierGUI mcreator_64 = new mcreator_purifierGUI();
+mcreator_interspaceTransmitter mcreator_65 = new mcreator_interspaceTransmitter();
+mcreator_thatPlanet mcreator_66 = new mcreator_thatPlanet();
+mcreator_purifiedChuchoPoop mcreator_67 = new mcreator_purifiedChuchoPoop();
+mcreator_defqonOneSpeaker mcreator_68 = new mcreator_defqonOneSpeaker();
+mcreator_chuchoTNT mcreator_69 = new mcreator_chuchoTNT();
+mcreator_thatPlanetGround mcreator_70 = new mcreator_thatPlanetGround();
+mcreator_thatPlanetBiomeBase mcreator_71 = new mcreator_thatPlanetBiomeBase();
+mcreator_alienofThatPlanet mcreator_72 = new mcreator_alienofThatPlanet();
+mcreator_alienBrickGreen mcreator_73 = new mcreator_alienBrickGreen();
+mcreator_alienBrickOrange mcreator_74 = new mcreator_alienBrickOrange();
 
 
 @Override
@@ -249,6 +253,10 @@ if(mcreator_67.addFuel(fuel)!=0) return mcreator_67.addFuel(fuel);
 if(mcreator_68.addFuel(fuel)!=0) return mcreator_68.addFuel(fuel);
 if(mcreator_69.addFuel(fuel)!=0) return mcreator_69.addFuel(fuel);
 if(mcreator_70.addFuel(fuel)!=0) return mcreator_70.addFuel(fuel);
+if(mcreator_71.addFuel(fuel)!=0) return mcreator_71.addFuel(fuel);
+if(mcreator_72.addFuel(fuel)!=0) return mcreator_72.addFuel(fuel);
+if(mcreator_73.addFuel(fuel)!=0) return mcreator_73.addFuel(fuel);
+if(mcreator_74.addFuel(fuel)!=0) return mcreator_74.addFuel(fuel);
 return 0;
 }
 
@@ -399,6 +407,14 @@ if(world.provider.getDimensionId()==-1)mcreator_69.generateNether(world, random,
 if(world.provider.getDimensionId()==0)mcreator_69.generateSurface(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==-1)mcreator_70.generateNether(world, random, chunkX, chunkZ);
 if(world.provider.getDimensionId()==0)mcreator_70.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_71.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_71.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_72.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_72.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_73.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_73.generateSurface(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==-1)mcreator_74.generateNether(world, random, chunkX, chunkZ);
+if(world.provider.getDimensionId()==0)mcreator_74.generateSurface(world, random, chunkX, chunkZ);
 
 
 }
@@ -483,6 +499,10 @@ mcreator_67.load(event);
 mcreator_68.load(event);
 mcreator_69.load(event);
 mcreator_70.load(event);
+mcreator_71.load(event);
+mcreator_72.load(event);
+mcreator_73.load(event);
+mcreator_74.load(event);
 
 
 }
@@ -559,6 +579,10 @@ mcreator_67.serverLoad(event);
 mcreator_68.serverLoad(event);
 mcreator_69.serverLoad(event);
 mcreator_70.serverLoad(event);
+mcreator_71.serverLoad(event);
+mcreator_72.serverLoad(event);
+mcreator_73.serverLoad(event);
+mcreator_74.serverLoad(event);
 }
 @EventHandler
 public void preInit(FMLPreInitializationEvent event){
@@ -633,6 +657,10 @@ mcreator_67.instance = this.instance;
 mcreator_68.instance = this.instance;
 mcreator_69.instance = this.instance;
 mcreator_70.instance = this.instance;
+mcreator_71.instance = this.instance;
+mcreator_72.instance = this.instance;
+mcreator_73.instance = this.instance;
+mcreator_74.instance = this.instance;
 mcreator_0.preInit(event);
 mcreator_1.preInit(event);
 mcreator_2.preInit(event);
@@ -704,6 +732,10 @@ mcreator_67.preInit(event);
 mcreator_68.preInit(event);
 mcreator_69.preInit(event);
 mcreator_70.preInit(event);
+mcreator_71.preInit(event);
+mcreator_72.preInit(event);
+mcreator_73.preInit(event);
+mcreator_74.preInit(event);
 proxy.registerRenderers(this);
 }
 public static class GuiHandler implements IGuiHandler {

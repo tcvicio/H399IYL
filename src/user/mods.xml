@@ -5,23 +5,6 @@
 <mod>
 
 	<name>
-		HacheLand
-	</name>
-
-	<type>
-		Biome
-	</type>
-
-	<description>
-		Biome is specific area with defined shape, color, weather and fauna.
-	</description>
-
-</mod>
-
-
-<mod>
-
-	<name>
 		BeachPalm
 	</name>
 
@@ -1196,6 +1179,91 @@
 
 	<name>
 		ChuchoTNT
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ThatPlanetGround
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		ThatPlanetBiomeBase
+	</name>
+
+	<type>
+		Biome
+	</type>
+
+	<description>
+		Biome is specific area with defined shape, color, weather and fauna.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienofThatPlanet
+	</name>
+
+	<type>
+		Mob
+	</type>
+
+	<description>
+		Mob is living object with movement and specified shape. It can be monster or peaceful.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienBrickGreen
+	</name>
+
+	<type>
+		Block
+	</type>
+
+	<description>
+		Block is basic unit in minecraft. It is 3D object that can be placed and used to build.
+	</description>
+
+</mod>
+
+
+<mod>
+
+	<name>
+		AlienBrickOrange
 	</name>
 
 	<type>

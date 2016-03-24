@@ -1,5 +1,6 @@
 #Lang file was made using MCreator
-#Fri Mar 18 23:15:47 ART 2016
+#Wed Mar 23 21:23:00 ART 2016
+tile.AlienBrickOrange.name=Alien Brick (Orange)
 item.HacheHoe.name=Hache Hoe
 tile.AleinOreBlock.name=Alien Metal Block
 item.HacheGem.name=Hache Gem
@@ -33,24 +34,27 @@ tile.Generic.name=TEST BLOCK
 item.HacheAxe.name=Hache Axe
 tile.HacheOre.name=Hache Ore
 itemGroup.tabhacheTab=H399IYL stuff
+tile.ThatPlanetGround.name=Ground of That Planet
 item.PurifiedChuchoPoop.name=Chucho's Poop
-itemGroup.tabtabDefqon1=H399IYL Defqon.1 stuff
 item.RedRecord.name=Red Defqon.1 Record
+itemGroup.tabtabDefqon1=H399IYL Defqon.1 stuff
+entity.alienofThatPlanet.name=Avalos
+tile.AlienBrickGreen.name=Alien Brick (Green)
 tile.WeedPlant.name=Sea Weed
-item.YellowRecord.name=Yellow Defqon.1 Record
-item.WreckedShipDiary.name=Ship's diary
 item.HacheArmor_boots.name=Hache Boots
+item.WreckedShipDiary.name=Ship's diary
+item.YellowRecord.name=Yellow Defqon.1 Record
 item.BlackRecord.name=Black Defqon.1 Record
 item.IndigoRecord.name=Indigo Defqon.1 Record
 item.HacheArmor_head.name=Hache Helmet
 item.PurpleRecord.name=Purple Defqon.1 Record
-item.HacheArmor_body.name=Hache Body
-item.nightmareDimension_trigger.name=Alien igniter
 tile.SeaWeed.name=Sea Weed
+item.nightmareDimension_trigger.name=Alien igniter
+item.HacheArmor_body.name=Hache Body
 item.GoldRecord.name=Gold Defqon.1 Record
 tile.MachinePurifier.name=Purifier
-tile.CompressedObsidian.name=Compressed Obsidian
 tile.CompressedEndStone.name=Compressed End Stone
+tile.CompressedObsidian.name=Compressed Obsidian
 achievement.archAlienTech=Outer Space Tech
 tile.DefqonOneSpeaker.name=Defqon.1 Speaker
 item.WhiteRecord.name=White Defqon.1 Record

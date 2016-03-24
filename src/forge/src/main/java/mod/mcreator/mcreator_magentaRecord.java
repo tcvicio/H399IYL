@@ -1,4 +1,4 @@
-package mod.mcreator;
+
 import net.minecraftforge.fml.client.registry.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.asm.*;
@@ -141,23 +141,6 @@ public int getMaxItemUseDuration(ItemStack par1ItemStack)
 public float getStrVsBlock(ItemStack par1ItemStack, Block par2Block)
 {
     return 1.0F;
-}
-@Override
-public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entity){
-float var4 = 1.0F;
-int i = (int)(entity.prevPosX + (entity.posX - entity.prevPosX) * (double)var4);
-int j = (int)(entity.prevPosY + (entity.posY - entity.prevPosY) * (double)var4 + 1.62D);
-int k = (int)(entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double)var4);
-
-if(world.getBlockState(new BlockPos(i, j, k)) == mcreator_defqonOneSpeaker.block){
-world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "TestEnvironmentMod:htnniyl.speaker.magenta", 1.0F, 1.0F);
-}
-
-if(world.getBlockState(new BlockPos(i, j, k)) == mcreator_defqonOneSpeaker.block){
-if(entity instanceof EntityPlayer)((EntityPlayer)entity).inventory.consumeInventoryItem(mcreator_magentaRecord.block);
-}
-
-return itemstack;
 }
 public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List list, boolean par4)
 {
